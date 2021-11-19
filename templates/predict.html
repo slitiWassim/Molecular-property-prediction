@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="A deep learning framework for high-throughput
+mechanism-driven data compound screening and its
+application to COVID-19 drug repurposing, Module I:​, Module II:​, Module III:​">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css1/nicepage.css') }}" media="screen">
+<link rel="stylesheet" href="{{ url_for('static', filename='css1/Home.css') }}" media="screen">
+    <script class="u-script" type="text/javascript" src="/static/JS1/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="/static/JS1/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.16.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"url": "index.html"
+}</script>
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#478ac9">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+  </head>
+  <body class="u-body"><header class="u-clearfix u-header u-palette-5-dark-2 u-sticky u-header" id="sec-3b32"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-text u-text-palette-1-light-2 u-text-1">ibiote​ch</p>
+        <h4 class="u-text u-text-2">Medical I​ntelligence for Smarter Healthcare</h4>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="sec-d99b">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-palette-5-dark-2 u-text-1">A deep learning framework for high-throughput
+mechanism-driven data compound screening and its
+application to COVID-19 drug repurposing </h2>
+        <div class="u-form u-form-1">
+          <form  method = "POST" enctype = "multipart/form-data">
+            <div class="u-form-group u-form-name">
+              <label for="name-674d" class="u-form-control-hidden u-label">Name</label>
+              <input type="text" placeholder="Enter the smile here" id="name-674d" name="smile" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+              <button  type="submit" class="u-btn u-btn-submit u-button-style">predict your molecule</button>
+             <!-- <input type="submit" class="u-btn u-btn-submit u-button-style" value="predict your molecule">-->
+            </div>
+            <div class="u-align-center u-form-group u-form-submit">
+              <!--<a href="#" class="u-btn u-btn-submit u-button-style">predict your molecule</a>-->
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+            <div class="u-form-send-message u-form-send-success"> Unable to send your message. Please fix errors then try again. </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+          </form>
+         <!-- <form  method = "POST" enctype = "multipart/form-data">
+            <div class="u-form-group u-form-name">
+              <label for="name-674d" class="u-form-control-hidden u-label">Name</label>
+              <input type="text" placeholder="Enter the smile here" id="name-674d" name="smile" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+              <button  type="submit">predict your molecules </button>
+            </div>
+            <div class="u-align-center u-form-group u-form-submit">
+            </div>
+              <div class="u-layout">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                    <div class="u-container-layout u-valign-top u-container-layout-1">
+                      <div class="u-clearfix u-custom-html u-custom-html-1">
+                        <p>
+                          {%  if display_detection %}
+                            <img id="bo" src="/static/uploads/{{display_detection}}" width="530" height="400" alt="" />
+                           {%endif%}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                    <div class="u-container-layout u-container-layout-2">
+                      <div class="u-clearfix u-custom-html u-custom-html-2">
+                        <p>
+                          {%  if display_detection %}
+                            <img id="bo" src="/static/detections/{{display_detection}}" width="530" height="400" alt="" />
+                           {%endif%}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-clearfix u-custom-html u-custom-html-3">
+              <style></style>
+              <script> function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result)
+                        .width(150)
+                        .height(200);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        } </script>
+              <p>
+                <input type="file"  name = "file" onchange="readURL(this);">
+              </p>
+            </div>
+            <button class="u-btn u-button-style u-none u-text-active-palette-1-light-1 u-text-hover-palette-2-base u-text-palette-1-base u-btn-1" type="submit">predict &gt;&gt;</button>
+          </form>-->
+
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-border-1 u-border-grey-75 u-clearfix u-section-2" id="carousel_afeb">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <img class="u-image u-image-1" src="/static/images/e300669cc9b1d2314d630c736b40e565905ddc8e2455e4d62ed312039d9370666b5fee5112f7b6e855654d443b706628f039c00bd19e5aa00acd9a_1280.png" data-image-width="1280" data-image-height="794">
+        <h2 class="u-text u-text-palette-2-base u-text-1">Module I:<span style="font-size: 3rem;"></span>
+        </h2>
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-left u-container-style u-list-item u-palette-1-dark-1 u-repeater-item u-list-item-1">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
+                <h5 class="u-align-center u-text u-text-2">IC50</h5>
+                
+                {%  if  not ic50 %}
+                <h4 class="u-align-center u-text u-text-3">---</h4>
+                {%endif%}
+                {%  if  ic50 %}
+                <h4 class="u-align-center u-text u-text-3">{{ic50}}</h4>
+                {%endif%}
+
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-list-item u-palette-1-dark-1 u-repeater-item u-list-item-2">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
+
+                <h5 class="u-align-center u-text u-text-4">EC50</h5>
+                
+                
+                
+                {%  if  ec50 %}
+                <h4 class="u-align-center u-text u-text-5">{{ec50}}</h4>
+                {%endif%}
+
+                {%  if not ec50 %}
+                <h4 class="u-align-center u-text u-text-5">---</h4>
+                {%endif%}
+
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-list-item u-palette-1-dark-1 u-repeater-item u-list-item-3">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
+               
+                <h5 class="u-align-center u-text u-text-6">EC90</h5>
+                
+                {%  if not ec90 %}
+                <h4 class="u-align-center u-text u-text-7">---</h4>
+                {%endif%}
+                {%  if  ec90 %}
+                <h4 class="u-align-center u-text u-text-7">{{ec90}}</h4>
+                {%endif%}
+
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-list-item u-palette-1-dark-1 u-repeater-item u-list-item-4">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4">
+                <h5 class="u-align-center u-text u-text-8">TOXICITY</h5>
+                
+                {%  if not toxcity %}
+                <h4 class="u-align-center u-text u-text-9">---</h4>
+                {%endif%}
+                {%  if  toxcity %}
+                <h4 class="u-align-center u-text u-text-9">{{toxcity}}</h4>
+                {%endif%}
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="u-text u-text-palette-1-base u-text-10">Activity and Toxicity prediction</h3>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-3" id="sec-20222">
+      <div class="u-clearfix u-sheet u-sheet-1"><!--post_details--><!--post_details_options_json--><!--{"source":""}--><!--/post_details_options_json--><!--blog_post-->
+        <div class="u-container-style u-expanded-width u-post-details u-post-details-1">
+          <div class="u-container-layout u-valign-top u-container-layout-1">
+            <h2 class="u-text u-text-palette-2-base u-text-1">Module II:<span style="font-size: 3rem;"></span>
+            </h2>
+            <h3 class="u-text u-text-palette-1-base u-text-2">Epigenetic Therapy Prediction </h3><!--blog_post_image-->
+            <img class="u-blog-control u-image u-image-1" src="/static/images/ef14003263d652b97cae895f3e4211d3de54256ad0c0c67feb6d4152f7fb33c2906f3798c5b01945bba137f4e25d422ce3bc8ebac3240fdd2260eb_1280.jpg" data-image-width="1280" data-image-height="854"><!--/blog_post_image-->
+            <img class="u-image u-image-default u-image-2" src="/static/images/314e10d09aeb2a4a91fc24d89ab60f5766e7cefd64bb7d38d99376e9329dd95c2c55557dae3d49052ea75a8a29703947d5b1a419be135be3119f23_1280.jpg" alt="" data-image-width="1280" data-image-height="853">
+          </div>
+        </div><!--/blog_post--><!--/post_details-->
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-4" id="carousel_2da4">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-palette-2-base u-text-1">Module III:<span style="font-size: 3rem;"></span>
+        </h2>
+        <h3 class="u-align-left u-text u-text-palette-1-base u-text-2">Fingerprints similarity prediction for bioequivallence search</h3>
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                {%  if not ec90 %}
+                <img class="u-image u-image-round u-preserve-proportions u-radius-10 u-image-1" src="/static/images/ab.jpg" alt="" data-image-width="555" data-image-height="260">
+                {%endif%}
+                {%  if  ec90 %}
+                <img class="u-image u-image-round u-preserve-proportions u-radius-10 u-image-1" src="/static/detections/result_0.jpg" alt="" data-image-width="555" data-image-height="260">
+                {%endif%}
+
+                <h2 class="u-text u-text-3">Ceftobiprole Score : </h2>
+                {%  if  sc1 %}
+                <h2 class="u-text u-text-3">{{sc1}}</h2>
+                {%endif%}
+                {%  if not sc1 %}
+                <h2 class="u-text u-text-3">--- </h2>
+                {%endif%}
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                {%  if not ec90 %}
+                <img class="u-image u-image-round u-preserve-proportions u-radius-10 u-image-1" src="/static/images/ab.jpg" alt="" data-image-width="555" data-image-height="260">
+                {%endif%}
+                {%  if  ec90 %}
+                <img class="u-image u-image-round u-preserve-proportions u-radius-10 u-image-1" src="/static/detections/result_1.jpg" alt="" data-image-width="555" data-image-height="260">
+                {%endif%}
+
+
+                <h2 class="u-text u-text-4">Alisporivir Score :</h2>
+                {%  if not sc2 %}
+                <h2 class="u-text u-text-4"> ---</h2>
+                {%endif%}
+                {%  if  sc2 %}
+                <h2 class="u-text u-text-4"> {{sc2}}</h2>
+                {%endif%}
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+
+                {%  if not ec90 %}
+                <img class="u-image u-image-round u-preserve-proportions u-radius-10 u-image-1" src="/static/images/ab.jpg" alt="" data-image-width="555" data-image-height="260">
+                {%endif%}
+                {%  if  ec90 %}
+                <img class="u-image u-image-round u-preserve-proportions u-radius-10 u-image-1" src="/static/detections/result_2.jpg" alt="" data-image-width="555" data-image-height="260">
+                {%endif%}
+                <h2 class="u-text u-text-5">Cyclosporin Score :</h2>
+                {%  if not sc3 %}
+                <h2 class="u-text u-text-5">---</h2>
+                {%endif%}
+                {%  if  sc3 %}
+                <h2 class="u-text u-text-5">{{sc3}}</h2>
+                {%endif%}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-expanded-width u-list u-list-2">
+          <div class="u-repeater u-repeater-2">
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-4">
+                {%  if not ec90 %}
+                <img class="u-image u-image-round u-preserve-proportions u-radius-10 u-image-1" src="/static/images/ab.jpg" alt="" data-image-width="555" data-image-height="260">
+                {%endif%}
+                {%  if  ec90 %}
+                <img class="u-image u-image-round u-preserve-proportions u-radius-10 u-image-1" src="/static/detections/result_3.jpg" alt="" data-image-width="555" data-image-height="260">
+                {%endif%}
+                <h2 class="u-text u-text-6">Eraxis Score :</h2>
+                {%  if not sc4 %}
+                <h2 class="u-text u-text-6">---</h2>
+                {%endif%}
+                {%  if  sc4 %}
+                <h2 class="u-text u-text-6">{{sc4}}</h2>
+                {%endif%}
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-5">
+                {%  if not ec90 %}
+                <img class="u-image u-image-round u-preserve-proportions u-radius-10 u-image-1" src="/static/images/ab.jpg" alt="" data-image-width="555" data-image-height="260">
+                {%endif%}
+                {%  if  ec90 %}
+                <img class="u-image u-image-round u-preserve-proportions u-radius-10 u-image-1" src="/static/detections/result_4.jpg" alt="" data-image-width="555" data-image-height="260">
+                {%endif%}
+                <h2 class="u-text u-text-7">Voclosporin Score :</h2>
+                {%  if  not sc6 %}
+                <h2 class="u-text u-text-7">---</h2>
+                {%endif%}   
+                {%  if   sc6 %}
+                <h2 class="u-text u-text-7">{{sc5}}</h2>
+                {%endif%} 
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-6">
+                {%  if not ec90 %}
+                <img class="u-image u-image-round u-preserve-proportions u-radius-10 u-image-1" src="/static/images/ab.jpg" alt="" data-image-width="555" data-image-height="260">
+                {%endif%}
+                {%  if  ec90 %}
+                <img class="u-image u-image-round u-preserve-proportions u-radius-10 u-image-1" src="/static/detections/result_5.jpg" alt="" data-image-width="555" data-image-height="260">
+                {%endif%}
+                <h2 class="u-text u-text-8">Valspodar Score :</h2>
+                {%  if  not sc6 %}
+                <h2 class="u-text u-text-8">---</h2>
+                {%endif%}
+                {%  if   sc6 %}
+                <h2 class="u-text u-text-8">{{sc6}}</h2>
+                {%endif%}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+  </body>
+</html>
